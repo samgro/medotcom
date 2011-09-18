@@ -1,9 +1,23 @@
+<!DOCTYPE html>
 <html>
 <head>
   <title>Test</title>
+  <link rel='stylesheet' href='/stylesheets/main.css'>
 </head>
 
 <body>
-  {{html body}}
+  <div class='row'>
+    <div class='column grid_3' id='nav'>
+      <ul>
+        <li>About me</li>
+        <li>Tech</li>
+        <li>Outdoors</li>
+        <li>Seattle</li>
+      </ul>
+    </div>
+    <div class='column grid_10'>
+      {{html body}}
+    </div>
+  </div>
 </body>
 </html>

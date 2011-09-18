@@ -1,0 +1,58 @@
+/* Baseline: http://www.alistapart.com/articles/settingtypeontheweb */
+p { 
+  margin-bottom: 18px; 
+}
+
+body, textarea {
+  font-family: "lucida grande", "segoe ui", tahoma, sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+p,
+ul,
+ol { 
+  margin-bottom: 18px; 
+}
+
+ul, ol {
+  padding-left: 1.5em;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+.left { 
+  float: left; 
+  margin: 0px 18px 0px 0px; 
+}
+.right { 
+  float: right; 
+  margin: 0px 0px 0px 18px; 
+}
+
+h1 {
+  font-size: 24px; 
+  line-height: 36px;
+  margin-bottom: 18px; 
+}
+  
+h2 {
+  font-size: 18px; 
+  line-height: 18px; 
+  margin-bottom: 18px;
+}
+
+h3 { 
+  font-size: 14px; 
+  line-height: 18px;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}

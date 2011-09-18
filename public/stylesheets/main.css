@@ -1,0 +1,172 @@
+/* CSS reset from Blueprint */
+html {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline; }
+
+article, aside, dialog, figure, footer, header, hgroup, nav, section {
+  display: block; }
+
+body {
+  line-height: 1.5;
+  background: white; }
+
+table {
+  border-collapse: separate;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  float: none !important; }
+
+table, th, td {
+  vertical-align: middle; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: ''; }
+
+blockquote, q {
+  quotes: "" ""; }
+
+a img {
+  border: none; }
+
+a:focus {
+  outline: 1px dotted; }
+
+/* Baseline: http://www.alistapart.com/articles/settingtypeontheweb */
+p {
+  margin-bottom: 18px; }
+
+body, textarea {
+  font-family: "lucida grande", "segoe ui", tahoma, sans-serif;
+  font-size: 12px;
+  line-height: 18px; }
+
+p,
+ul,
+ol {
+  margin-bottom: 18px; }
+
+ul, ol {
+  padding-left: 1.5em; }
+
+ul {
+  list-style-type: disc; }
+
+.left {
+  float: left;
+  margin: 0px 18px 0px 0px; }
+
+.right {
+  float: right;
+  margin: 0px 0px 0px 18px; }
+
+h1 {
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 18px; }
+
+h2 {
+  font-size: 18px;
+  line-height: 18px;
+  margin-bottom: 18px; }
+
+h3 {
+  font-size: 14px;
+  line-height: 18px; }
+
+em {
+  font-style: italic; }
+
+strong {
+  font-weight: bold; }
+
+/* ================ */
+/* = The 1Kb Grid = */
+/* 16 columns, 40 pixels each, with 20 pixel gutter */
+/* ================ */
+.grid_1 {
+  width: 40px; }
+
+.grid_2 {
+  width: 100px; }
+
+.grid_3 {
+  width: 160px; }
+
+.grid_4 {
+  width: 220px; }
+
+.grid_5 {
+  width: 280px; }
+
+.grid_6 {
+  width: 340px; }
+
+.grid_7 {
+  width: 400px; }
+
+.grid_8 {
+  width: 460px; }
+
+.grid_9 {
+  width: 520px; }
+
+.grid_10 {
+  width: 580px; }
+
+.grid_11 {
+  width: 640px; }
+
+.grid_12 {
+  width: 700px; }
+
+.grid_13 {
+  width: 760px; }
+
+.grid_14 {
+  width: 820px; }
+
+.grid_15 {
+  width: 880px; }
+
+.grid_16 {
+  width: 940px; }
+
+.column {
+  margin: 0 10px;
+  overflow: hidden;
+  float: left;
+  display: inline; }
+
+.row {
+  width: 960px;
+  margin: 0 auto;
+  overflow: hidden; }
+
+.row .row {
+  margin: 0 -10px;
+  width: auto;
+  display: inline-block; }
+
+.top_row {
+  width: 960px;
+  margin: 0 auto; }
+
+ul.inline-list {
+  list-style-type: none;
+  padding: 0; }
+  ul.inline-list li {
+    display: inline; }
