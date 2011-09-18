@@ -3,6 +3,7 @@ My first node.js/express project. Trying to build my personal website/blog.
 
 # Usage
 Install node and necessary dependencies (coffeescript, jqtpl)
+
 <code>
 coffee app.coffee
 </code>
