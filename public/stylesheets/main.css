@@ -170,3 +170,32 @@ ul.inline-list {
   padding: 0; }
   ul.inline-list li {
     display: inline; }
+
+ul.unbulleted, #nav ul {
+  list-style-type: none;
+  padding: 0; }
+
+/* Layout */
+body {
+  background: #292929;
+  color: #fffff7; }
+
+#nav {
+  padding-top: 10px; }
+  #nav ul {
+    text-align: right; }
+
+#content {
+  background: #fffff7;
+  color: #292929;
+  height: 100%; }
+
+#content-container {
+  border-left: 2px;
+  border-right: 2px;
+  border-style: solid;
+  border-color: #777777;
+  padding: 10px 8px; }
+
+html, body, #container, #content-container {
+  height: 100%; }

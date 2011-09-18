@@ -6,3 +6,8 @@ ul.inline-list {
     display: inline;
   }
 }
+
+ul.unbulleted {
+  list-style-type: none;
+  padding: 0;
+}

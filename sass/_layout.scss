@@ -1,0 +1,33 @@
+/* Layout */
+body {
+  background: $dark;
+  color: $light;
+}
+
+// Navigation (left column)
+#nav {
+  padding-top: 10px;
+  ul {
+    @extend .unbulleted;
+    text-align: right;
+  }
+}
+
+// Container for content (middle column)
+#content {
+  background: $light;
+  color: $dark;
+  height: 100%;
+}
+#content-container {
+  border-left: 2px;
+  border-right: 2px;
+  border-style: solid;
+  border-color: $gray-border;
+  padding: 10px 8px;
+}
+
+// Make middle column background stretch to full height
+html, body, #container, #content-container {
+  height: 100%;
+}

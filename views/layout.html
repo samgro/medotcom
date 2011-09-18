@@ -2,21 +2,23 @@
 <html>
 <head>
   <title>Test</title>
-  <link rel='stylesheet' href='/stylesheets/main.css'>
+  <link rel='stylesheet' href='/stylesheets/main.css' />
 </head>
 
 <body>
-  <div class='row'>
+  <div class='row' id='container'>
     <div class='column grid_3' id='nav'>
       <ul>
-        <li>About me</li>
+        <li>Bio</li>
         <li>Tech</li>
         <li>Outdoors</li>
         <li>Seattle</li>
       </ul>
     </div>
-    <div class='column grid_10'>
-      {{html body}}
+    <div class='column grid_10' id='content'>
+      <div id='content-container'>
+        {{html body}}
+      </div>
     </div>
   </div>
 </body>
