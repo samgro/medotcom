@@ -2,10 +2,10 @@
 My first node.js/express project. Trying to build my personal website/blog.
 
 # Usage
-Install node and necessary dependencies (coffeescript, jqtpl)
+Install node and necessary dependencies (coffeescript, jqtpl). Also <code>sudo npm install -g nodemon</code> to avoid restarting your app in development mode.
 
 <code>
-coffee app.coffee
+nodemon app.coffee
 </code>
 
 # License
