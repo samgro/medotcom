@@ -1,5 +1,9 @@
 express = require 'express'
 routes = require './routes'
+mongoose = require 'mongoose'
+
+# Initialize DB connection
+mongoose.connect 'mongodb://localhost/medotcom'
 
 app = module.exports = express.createServer()
 

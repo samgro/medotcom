@@ -1,3 +1,5 @@
+Page = require './models/page'
+
 # Function for logging each request
 logRequest = (req) ->
   console.log "#{req.method} #{req.url} #{new Date()}"
@@ -7,7 +9,9 @@ set = (app) ->
   # Index
   app.get '/', (req, res) ->
     logRequest(req)
-    res.render 'index'
+    page = new Page title: 'test'
+    page.save (err) ->
+      res.render 'index'
 
   # Blog
   app.get '/:id', (req, res) ->
