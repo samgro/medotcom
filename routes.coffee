@@ -20,7 +20,10 @@ set = (app) ->
   # index
   app.get '/', (req, res) ->
     logRequest(req)
-    res.render 'index', title: 'Sam Grossberg dot com'
+    Page.find().desc('date').exec (err, pages) ->
+      res.render 'index',
+        title: 'Sam Grossberg dot com',
+        pages: pages
 
   # show
   app.get '/:slug', (req, res) ->
@@ -37,6 +40,7 @@ set = (app) ->
   # create
   app.post '/page', (req, res) ->
     page = new Page(req.body.page)
+    page.date = new Date()
     page.save (err) ->
       res.redirect "/#{page.slug}"
     

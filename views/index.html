@@ -1,1 +1,4 @@
-<h1>Hello, world!</h1>
+{{each(i, page) pages}}
+  <h2><a href='/${page.slug}'>${page.title}</a></h2>
+  {{html page.body}}
+{{/each}}
