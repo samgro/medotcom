@@ -1,33 +1,98 @@
 /* Layout */
-body {
-  background: $dark;
-  color: $light;
+body, textarea {
+  font-family: "lucida grande", "segoe ui", tahoma, sans-serif;
+  font-size: $medium;
+  line-height: $line-height;
 }
 
-// Navigation (left column)
+body {
+  background: $background;
+  color: $text;
+}
+
+h1, h2, h3 {
+  color: $header-text;
+}
+
+h1 {
+	font-family: Georgia;
+  font-size: $x-large;
+  line-height: $line-height*2;
+  margin-bottom: $line-height;
+	a, a:visited {
+		color: $header-text;
+	}
+}
+
+a,
+a:visited,
+a:hover,
+a:focus {
+	text-decoration: none;
+	color: $link-color;
+}
+
+p a {
+	border-bottom: 1px dotted $accent;
+}
+
+#header {
+	background: $dark;
+	padding: $line-height/2 0;
+	
+	.row {
+		position: relative;
+		overflow: none;
+	}
+	header {
+  	color: $header-text;
+	  font-family: futura;
+		font-size: 33px;
+		line-height: 40px;
+	}
+	.subtitle {
+	  font-style: italic;
+	  font-size: $small;
+	}
+}
+
+#profile {
+	position: relative;
+	height: 0px;
+	width: 960px;
+	margin: 0px auto;
+	
+	img {
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		border: 2px solid $text;
+		width: 96px;
+		height: 96px;
+	}
+}
+
 #nav {
-  padding-top: 10px;
-  ul {
-    @extend .unbulleted;
-    text-align: right;
-  }
+	margin-bottom: $line-height * 2;
+	width: 100%;
+	background: $dark-accent;
+	background: $nav-gradient-webkit;
+	
+	a {
+		color: $nav-color;
+	}
+
+	ul {
+		@extend .unbulleted;
+		margin: $line-height/2 0;
+	}
+	li {
+		display: inline;
+		padding: 0 $line-height/2 0 0;
+	}
 }
 
 // Container for content (middle column)
-#content {
-  background: $light;
-  color: $dark;
-  height: 100%;
-}
 #content-container {
-  border-left: 2px;
-  border-right: 2px;
-  border-style: solid;
-  border-color: $gray-border;
-  padding: 10px 8px;
-}
-
-// Make middle column background stretch to full height
-html, body, #container, #content-container {
-  height: 100%;
+  padding-right: 60px;
 }

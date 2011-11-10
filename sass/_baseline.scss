@@ -1,18 +1,13 @@
+$line-height: 20px;
 /* Baseline: http://www.alistapart.com/articles/settingtypeontheweb */
 p { 
-  margin-bottom: 18px; 
-}
-
-body, textarea {
-  font-family: "lucida grande", "segoe ui", tahoma, sans-serif;
-  font-size: 12px;
-  line-height: 18px;
+  margin-bottom: $line-height; 
 }
 
 p,
 ul,
 ol { 
-  margin-bottom: 18px; 
+  margin-bottom: $line-height; 
 }
 
 ul, ol {
@@ -24,29 +19,14 @@ ul {
 }
 
 .left { 
-  float: left; 
-  margin: 0px 18px 0px 0px; 
+  float: left;
 }
 .right { 
-  float: right; 
-  margin: 0px 0px 0px 18px; 
+  float: right;
 }
 
-h1 {
-  font-size: 24px; 
-  line-height: 36px;
-  margin-bottom: 18px; 
-}
-  
-h2 {
-  font-size: 18px; 
-  line-height: 18px; 
-  margin-bottom: 18px;
-}
-
-h3 { 
-  font-size: 14px; 
-  line-height: 18px;
+.hidden {
+	display: none;
 }
 
 em {

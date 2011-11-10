@@ -6,16 +6,39 @@
 </head>
 
 <body>
-  <div class='row' id='container'>
-    <div class='column grid_3' id='nav'>
-      <ul>
-        <li>About me</li>
-        <li>Tech</li>
-        <li>Outdoors</li>
-        <li>Seattle</li>
-      </ul>
+  <div id='profile'>
+    <img alt='Sam Grossberg' src='/images/sam-grossberg.jpg' />
+  </div>
+  
+  <div id='header'>
+    <div class='row'>      
+      <div class='column grid_2'>
+        &nbsp;
+      </div>
+    
+      <div class='column grid_14'>
+        <header>sam grossberg <span>dot</span> com</header>
+        <div class='subtitle'>Dev at GoPollGo. Skier, climber, geek.</div>
+      </div>
     </div>
-    <div class='column grid_10' id='content'>
+  </div>
+  
+  <div id='nav'>
+    <div class='row'>
+      <div class='column grid_2'>&nbsp;</div>
+      <div class='column grid_14'>
+        <ul>
+          <li><a href='#'>Home</a></li>
+          <li><a href='#'>About</a></li>
+          <li><a href='#'>Work</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div class='row' id='container'>
+    <div class='column grid_2'>&nbsp;</div>
+    <div class='column grid_12' id='content'>
       <div id='content-container'>
         {{html body}}
       </div>

@@ -1,2 +1,3 @@
 .monitor
 .sass-cache/**
+node_modules

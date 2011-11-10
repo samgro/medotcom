@@ -1,63 +1,54 @@
-/* CSS reset from Blueprint */
-html {
-  margin: 0;
-  padding: 0;
-  border: 0; }
-
-body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-weight: inherit;
-  font-style: inherit;
   font-size: 100%;
-  font-family: inherit;
+  font: inherit;
   vertical-align: baseline; }
 
-article, aside, dialog, figure, footer, header, hgroup, nav, section {
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
   display: block; }
 
-body {
-  line-height: 1.5;
-  background: white; }
-
-table {
-  border-collapse: separate;
-  border-spacing: 0; }
-
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  float: none !important; }
-
-table, th, td {
-  vertical-align: middle; }
-
-blockquote:before, blockquote:after, q:before, q:after {
-  content: ''; }
+ul {
+  list-style: none; }
 
 blockquote, q {
-  quotes: "" ""; }
+  quotes: none; }
 
-a img {
-  border: none; }
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
 
-a:focus {
-  outline: 1px dotted; }
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
 
 /* Baseline: http://www.alistapart.com/articles/settingtypeontheweb */
 p {
-  margin-bottom: 18px; }
-
-body, textarea {
-  font-family: "lucida grande", "segoe ui", tahoma, sans-serif;
-  font-size: 12px;
-  line-height: 18px; }
+  margin-bottom: 20px; }
 
 p,
 ul,
 ol {
-  margin-bottom: 18px; }
+  margin-bottom: 20px; }
 
 ul, ol {
   padding-left: 1.5em; }
@@ -66,26 +57,13 @@ ul {
   list-style-type: disc; }
 
 .left {
-  float: left;
-  margin: 0px 18px 0px 0px; }
+  float: left; }
 
 .right {
-  float: right;
-  margin: 0px 0px 0px 18px; }
+  float: right; }
 
-h1 {
-  font-size: 24px;
-  line-height: 36px;
-  margin-bottom: 18px; }
-
-h2 {
-  font-size: 18px;
-  line-height: 18px;
-  margin-bottom: 18px; }
-
-h3 {
-  font-size: 14px;
-  line-height: 18px; }
+.hidden {
+  display: none; }
 
 em {
   font-style: italic; }
@@ -176,26 +154,76 @@ ul.unbulleted, #nav ul {
   padding: 0; }
 
 /* Layout */
+body, textarea {
+  font-family: "lucida grande", "segoe ui", tahoma, sans-serif;
+  font-size: 16px;
+  line-height: 24px; }
+
 body {
-  background: #292929;
+  background: #343537;
+  color: #cccccc; }
+
+h1, h2, h3 {
   color: #fffff7; }
 
-#nav {
-  padding-top: 10px; }
-  #nav ul {
-    text-align: right; }
+h1 {
+  font-family: Georgia;
+  font-size: 42px;
+  line-height: 48px;
+  margin-bottom: 24px; }
+  h1 a, h1 a:visited {
+    color: #fffff7; }
 
-#content {
-  background: #fffff7;
-  color: #292929;
-  height: 100%; }
+a,
+a:visited,
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #badeb7; }
+
+p a {
+  border-bottom: 1px dotted #999999; }
+
+#header {
+  background: #2f2926;
+  padding: 12px 0; }
+  #header .row {
+    position: relative;
+    overflow: none; }
+  #header header {
+    color: #fffff7;
+    font-family: futura;
+    font-size: 33px;
+    line-height: 40px; }
+  #header .subtitle {
+    font-style: italic;
+    font-size: 12px; }
+
+#profile {
+  position: relative;
+  height: 0px;
+  width: 960px;
+  margin: 0px auto; }
+  #profile img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: 2px solid #cccccc;
+    width: 96px;
+    height: 96px; }
+
+#nav {
+  margin-bottom: 48px;
+  width: 100%;
+  background: #606860;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#7d877d), to(#606860)); }
+  #nav a {
+    color: #cfcabe; }
+  #nav ul {
+    margin: 12px 0; }
+  #nav li {
+    display: inline;
+    padding: 0 12px 0 0; }
 
 #content-container {
-  border-left: 2px;
-  border-right: 2px;
-  border-style: solid;
-  border-color: #777777;
-  padding: 10px 8px; }
-
-html, body, #container, #content-container {
-  height: 100%; }
+  padding-right: 60px; }
