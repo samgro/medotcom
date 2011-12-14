@@ -22,7 +22,7 @@ set = (app) ->
     logRequest(req)
     Page.find().desc('date').exec (err, pages) ->
       res.render 'index',
-        title: 'Sam Grossberg dot com',
+        title: 'Sam Grossberg',
         pages: pages
 
   # show
@@ -33,12 +33,12 @@ set = (app) ->
       article: req.page
 
   # new
-  app.get '/page/new', (req, res) ->
+  app.get '/pages/new', (req, res) ->
     logRequest(req)
-    res.render 'page/new', title: 'New Page'
+    res.render 'pages/new', title: 'New Page'
 
   # create
-  app.post '/page', (req, res) ->
+  app.post '/pages', (req, res) ->
     page = new Page(req.body.page)
     page.date = new Date()
     page.save (err) ->

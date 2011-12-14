@@ -1,0 +1,16 @@
+#new-page {
+  .large-textarea {
+    box-sizing: border-box;
+    width: 100%;
+    height: 200px;
+  }
+}
+
+#pages {
+  #publish-date {
+    float: right;
+    font-size: $large;
+    line-height: $header-line-height;
+    color: $header-text;
+  }
+}

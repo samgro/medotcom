@@ -8,6 +8,7 @@ body, textarea {
 body {
   background: $background;
   color: $text;
+  font-weight: 300;
 }
 
 h1, h2, h3 {
@@ -15,12 +16,12 @@ h1, h2, h3 {
 }
 
 h1 {
-	font-family: Georgia;
   font-size: $x-large;
-  line-height: $line-height*2;
+  line-height: $header-line-height;
   margin-bottom: $line-height;
-	a, a:visited {
+	a, a:visited, a:hover, a:focus {
 		color: $header-text;
+		font-weight: 300;
 	}
 }
 
@@ -30,6 +31,7 @@ a:hover,
 a:focus {
 	text-decoration: none;
 	color: $link-color;
+	font-weight: normal;
 }
 
 p a {
@@ -46,13 +48,12 @@ p a {
 	}
 	header {
   	color: $header-text;
-	  font-family: futura;
 		font-size: 33px;
 		line-height: 40px;
+		font-weight: normal;
 	}
 	.subtitle {
 	  font-style: italic;
-	  font-size: $small;
 	}
 }
 
@@ -73,6 +74,7 @@ p a {
 }
 
 #nav {
+  border-top: 1px solid $lighten-border;
 	margin-bottom: $line-height * 2;
 	width: 100%;
 	background: $dark-accent;

@@ -3,9 +3,11 @@
 <head>
   <link rel='stylesheet' href='/stylesheets/main.css' />
   <title>${title}</title>
+  <script type="text/javascript" src="http://use.typekit.com/dwi8ggm.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
 
-<body>
+<body class='tk-myriad-pro'>
   <div id='profile'>
     <img alt='Sam Grossberg' src='/images/sam-grossberg.jpg' />
   </div>
@@ -17,7 +19,7 @@
       </div>
     
       <div class='column grid_14'>
-        <header>sam grossberg <span>dot</span> com</header>
+        <header>Sam Grossberg</header>
         <div class='subtitle'>Dev at GoPollGo. Skier, climber, geek.</div>
       </div>
     </div>
@@ -29,20 +31,13 @@
       <div class='column grid_14'>
         <ul>
           <li><a href='#'>Home</a></li>
-          <li><a href='#'>About</a></li>
+          <li><a href='/about'>About</a></li>
           <li><a href='#'>Work</a></li>
         </ul>
       </div>
     </div>
   </div>
   
-  <div class='row' id='container'>
-    <div class='column grid_2'>&nbsp;</div>
-    <div class='column grid_12' id='content'>
-      <div id='content-container'>
-        {{html body}}
-      </div>
-    </div>
-  </div>
+  {{html body}}
 </body>
 </html>

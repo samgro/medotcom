@@ -161,25 +161,27 @@ body, textarea {
 
 body {
   background: #343537;
-  color: #cccccc; }
+  color: #cccccc;
+  font-weight: 300; }
 
 h1, h2, h3 {
   color: #fffff7; }
 
 h1 {
-  font-family: Georgia;
-  font-size: 42px;
-  line-height: 48px;
+  font-size: 28px;
+  line-height: 36px;
   margin-bottom: 24px; }
-  h1 a, h1 a:visited {
-    color: #fffff7; }
+  h1 a, h1 a:visited, h1 a:hover, h1 a:focus {
+    color: #fffff7;
+    font-weight: 300; }
 
 a,
 a:visited,
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #badeb7; }
+  color: #badeb7;
+  font-weight: normal; }
 
 p a {
   border-bottom: 1px dotted #999999; }
@@ -192,12 +194,11 @@ p a {
     overflow: none; }
   #header header {
     color: #fffff7;
-    font-family: futura;
     font-size: 33px;
-    line-height: 40px; }
+    line-height: 40px;
+    font-weight: normal; }
   #header .subtitle {
-    font-style: italic;
-    font-size: 12px; }
+    font-style: italic; }
 
 #profile {
   position: relative;
@@ -213,6 +214,7 @@ p a {
     height: 96px; }
 
 #nav {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
   margin-bottom: 48px;
   width: 100%;
   background: #606860;
@@ -227,3 +229,14 @@ p a {
 
 #content-container {
   padding-right: 60px; }
+
+#new-page .large-textarea {
+  box-sizing: border-box;
+  width: 100%;
+  height: 200px; }
+
+#pages #publish-date {
+  float: right;
+  font-size: 21px;
+  line-height: 36px;
+  color: #fffff7; }
