@@ -3,7 +3,13 @@ routes = require './routes'
 mongoose = require 'mongoose'
 
 # Initialize DB connection
-mongoose.connect 'mongodb://localhost/medotcom'
+if app.settings.env is 'development'
+  mongoose.connect 'mongodb://localhost/medotcom'
+  console.log 'Connecting to development DB'
+else
+  console.log 'Connecting to production DB'
+  console.log "  at #{process.env.MONGOHQ_URL}"
+  mongoose.connect process.env.MONGOHQ_URL
 
 app = module.exports = express.createServer()
 
