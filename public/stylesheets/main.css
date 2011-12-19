@@ -130,7 +130,7 @@ strong {
   display: inline; }
 
 .row {
-  width: 960px;
+  width: 660px;
   margin: 0 auto;
   overflow: hidden; }
 
@@ -140,7 +140,7 @@ strong {
   display: inline-block; }
 
 .top_row {
-  width: 960px;
+  width: 660px;
   margin: 0 auto; }
 
 ul.inline-list {
@@ -230,7 +230,7 @@ a:focus {
 #profile {
   position: relative;
   height: 0px;
-  width: 960px;
+  width: 660px;
   margin: 0px auto; }
   #profile img {
     position: absolute;
