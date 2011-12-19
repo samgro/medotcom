@@ -3,15 +3,6 @@ express = require 'express'
 routes = require './routes'
 mongoose = require 'mongoose'
 
-# Initialize DB connection
-if app.settings.env is 'development'
-  mongoose.connect 'mongodb://localhost/medotcom'
-  console.log 'Connecting to development DB'
-else
-  console.log 'Connecting to production DB'
-  console.log "  at #{process.env.MONGOHQ_URL}"
-  mongoose.connect process.env.MONGOHQ_URL
-
 app = module.exports = express.createServer()
 
 app.configure ->
@@ -28,6 +19,15 @@ app.configure 'development', ->
 
 app.configure 'production', ->
   app.use express.errorHandler
+
+# Initialize DB connection
+if app.settings.env is 'development'
+  mongoose.connect 'mongodb://localhost/medotcom'
+  console.log 'Connecting to development DB'
+else
+  console.log 'Connecting to production DB'
+  console.log "  at #{process.env.MONGOHQ_URL}"
+  mongoose.connect process.env.MONGOHQ_URL
 
 routes.set(app)
 

@@ -225,7 +225,8 @@ p a {
   background: #606860;
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#7d877d), to(#606860)); }
   #nav a {
-    color: #cfcabe; }
+    color: #cfcabe;
+    font-weight: 600; }
   #nav ul {
     margin: 12px 0; }
   #nav li {
