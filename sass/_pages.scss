@@ -6,10 +6,15 @@
   }
 }
 
-#pages {
+.page {
   #publish-date {
     float: right;
     font-size: $large;
     line-height: $header-line-height;
   }
+  
+  p, li {
+    @extend .underlined-link;
+  }
 }
+

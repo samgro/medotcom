@@ -28,9 +28,9 @@ set = (app) ->
   # show
   app.get '/:slug', (req, res) ->
     logRequest(req)
-    res.render 'page/show',
+    res.render 'pages/show',
       title: req.page.title
-      article: req.page
+      page: req.page
 
   # new
   app.get '/pages/new', (req, res) ->

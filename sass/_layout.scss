@@ -1,4 +1,15 @@
 /* Layout */
+.underlined-link {
+  a,
+  a:visited {
+    border-bottom: 1px dotted $accent;
+  }
+  a:hover,
+  a:focus {
+    border-bottom: 1px solid $accent;
+  }
+}
+
 body, textarea {
   font-family: 'Helvetica Neue', helvetica, arial, sans-serif;
   font-size: $medium;
@@ -19,16 +30,22 @@ h1 {
   font-size: $x-large;
   line-height: $header-line-height;
   margin-bottom: $line-height;
-	a, a:visited, a:hover, a:focus {
+	font-weight: $header-font-weight;
+
+	a, a:visited {
 		color: $header-text;
-		font-weight: $header-font-weight;
+	}
+	
+	a:hover, a:focus {
+	  color: $link-color;
 	}
 }
 
 h2 {
+  $top-margin: 6px;
   font-size: $large;
   font-weight: $header-font-weight;
-  margin-bottom: $line-height;
+  margin: $top-margin 0 $line-height - $top-margin 0;
 }
 
 a,
@@ -37,11 +54,7 @@ a:hover,
 a:focus {
 	text-decoration: none;
 	color: $link-color;
-	font-weight: normal;
-}
-
-p a {
-	border-bottom: 1px dotted $accent;
+	font-weight: $link-font-weight;
 }
 
 #header {
@@ -53,13 +66,22 @@ p a {
 		overflow: none;
 	}
 	header {
-  	color: $header-text;
 		font-size: $x-large;
 		line-height: 40px;
 	}
 	.subtitle {
 	  font-style: italic;
+	  
+	  @extend .underlined-link;
 	}
+	a,
+  a:visited {
+  	color: $header-text;
+  }
+  a:hover,
+  a:focus {
+    color: $link-color;
+  }
 }
 
 #profile {
@@ -88,9 +110,8 @@ p a {
 
 	a {
 		color: $nav-color;
-		font-weight: 600;
+		font-weight: $link-font-weight;
 	}
-
 	ul {
 		@extend .unbulleted;
 		margin: $line-height/2 0;
