@@ -1,4 +1,4 @@
-console.log 'hello heroku'
+console.log 'Starting Node'
 express = require 'express'
 routes = require './routes'
 mongoose = require 'mongoose'

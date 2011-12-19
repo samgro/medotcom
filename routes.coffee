@@ -39,9 +39,22 @@ set = (app) ->
 
   # create
   app.post '/pages', (req, res) ->
+    logRequest(req)
     page = new Page(req.body.page)
-    page.date = new Date()
     page.save (err) ->
       res.redirect "/#{page.slug}"
-    
+  
+  # edit
+  app.get '/:slug/edit', (req, res) ->
+    logRequest(req)
+    res.render 'pages/edit',
+      title: req.page.title
+      page: req.page
+  
+  # update
+  app.put '/:slug', (req, res) ->
+    logRequest(req)
+    page.update(req.body.page) (err)->
+      res.redirect "/#{page.slug}"
+  
 exports.set = set

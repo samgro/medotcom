@@ -1,0 +1,23 @@
+<div id='new-page'>
+  <div class='row'>
+    <div class='column grid_2'>&nbsp;</div>
+    <div class='column grid_11'>
+      <h1>${page.title}</h1>
+      <form method='post' action='/pages'>
+        <label name='page[title]'>Title</label><br />
+        <input type='text' name='page[title]' value='${page.title}' /><br />
+  
+        <label name='page[slug]'>Slug</label><br />
+        <input type='text' name='page[slug]' value='${page.slug}' /><br />
+    
+        <label name='page[publish_date]'>Publish Date</label><br />
+        <input type='text' name='page[publish_date]' value='${page.publish_date}' /><br />
+  
+        <label name='page[body]'>Body</label><br />
+        <textarea name='page[body]' class='large-textarea'>${page.body}</textarea><br />
+  
+        <input type='submit' value='Submit' />
+      </form>
+    </div>
+  </div>
+</div>
