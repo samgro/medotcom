@@ -1,13 +1,29 @@
-<div class='page'>
-  <div class='row' id='container'>
-    <div class='column grid_2'>
-      <div id='publish-date' class='tk-myriad-pro'>06.12.11</div>
-    </div>
-    <div class='column grid_9' id='content'>
-      <div id='content-container'>
+<div class='row' id='container'>
+  <div class='column grid_2'>
+    <div id='publish-date' class='tk-myriad-pro'>06.12.11</div>
+  </div>
+  <div class='column grid_9' id='content'>
+    <div id='content-container'>
+      <div class='page'>
         <h1>${page.title}</h1>
         {{html page.body}}
       </div>
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var disqus_shortname = 'samgrossberg';
+        var disqus_identifier = '${page.slug}';
+        var disqus_url = 'http://samgrossberg.herokuapp.com/${page.slug}'
+        // var disqus_developer = 1;
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
     </div>
   </div>
 </div>

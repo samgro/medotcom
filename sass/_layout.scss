@@ -6,7 +6,7 @@
   }
   a:hover,
   a:focus {
-    border-bottom: 1px solid $accent;
+    border-bottom: 2px solid $accent;
   }
 }
 
@@ -24,13 +24,13 @@ body {
 
 h1, h2, h3 {
   color: $header-text;
+  font-weight: $header-font-weight;
 }
 
 h1 {
   font-size: $x-large;
   line-height: $header-line-height;
   margin-bottom: $line-height;
-	font-weight: $header-font-weight;
 
 	a, a:visited {
 		color: $header-text;
@@ -44,7 +44,6 @@ h1 {
 h2 {
   $top-margin: 6px;
   font-size: $large;
-  font-weight: $header-font-weight;
   margin: $top-margin 0 $line-height - $top-margin 0;
 }
 
